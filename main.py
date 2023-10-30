@@ -3,7 +3,7 @@ class Problem:
         if n > 0:return n * 2
         return 1
 
-    def _0564(n: str) -> int:
+    def _0564(n: str) -> int: # waiting ...
 
         return
 
@@ -14,12 +14,25 @@ class Problem:
         if n < 3:
             return 0
         return (n - 2) * 180
+
+
+    def _0014(s: list) -> int: # robocontest server error
+        n, k = s[0], s[1]
+        response = (k + 1) ** n
+
+        return int(response % (10e9 + 7))
+    
+    def _0604(s: str) -> int: # ord
+        return ord(s)
 class main:
-    def run(self):
 
-        response = Problem._0366(1)
+    def run(cls):
+        response = Problem._0604(97)
+
+
+
+
         print(response)
-
 if __name__ == '__main__':
     from time import time
     start = time()
