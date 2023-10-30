@@ -24,12 +24,13 @@ class Problem:
     
     def _0604(s: str) -> int: # ord
         return ord(s)
+
+    def _0012(n: int) -> str: 
+        
 class main:
 
     def run(cls):
         response = Problem._0604(97)
-
-
 
 
         print(response)
