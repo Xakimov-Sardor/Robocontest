@@ -35,13 +35,20 @@ class Problem:
             return 'Ali'
         else:
             return 'Bobur'
+
+    def _0066(n: list) -> int: # yeb to`ymas ochofat
+        a = 2 ** (2 ** n[0])
+        return a % n[1]
+    
+    def _1049(n: str):
+        
         
 
         
 class main:
 
     def run(cls):
-        response = Problem._0012(4)
+        response = Problem._0066([3, 15])
 
 
         print(response)
