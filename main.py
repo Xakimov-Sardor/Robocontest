@@ -25,12 +25,23 @@ class Problem:
     def _0604(s: str) -> int: # ord
         return ord(s)
 
-    def _0012(n: int) -> str: 
+    def _0012(n: int) -> str:
+        from func import is_Primary
+        a = 0
+        for i in range(1, n+ 1):
+            if is_Primary(i):
+                a += 1
+        if a % 2 == 0:
+            return 'Ali'
+        else:
+            return 'Bobur'
+        
+
         
 class main:
 
     def run(cls):
-        response = Problem._0604(97)
+        response = Problem._0012(4)
 
 
         print(response)
