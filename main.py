@@ -40,15 +40,24 @@ class Problem:
         a = 2 ** (2 ** n[0])
         return a % n[1]
     
-    def _1049(n: str):
+    def _0114(n: list) -> str:
+        x1, v1, x2, v2 = n[0], n[1], n[2], n[3]
         
+        x = (max(v1, v2) - (min(v1, v2)))/ (max(x1, x2) - (min(x1, x2)))
+
+        if x > 0:
+            return 'YES'
+
+        return 'NO'
+        
+    
         
 
         
 class main:
 
     def run(cls):
-        response = Problem._0066([3, 15])
+        response = Problem._0114([6, 5, 3 ,8])
 
 
         print(response)

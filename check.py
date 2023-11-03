@@ -50,3 +50,24 @@
 # # Print the values of n.
 # print(n_values)
 
+# a = list(map(int, input().split()))
+# x1, v1, x2, v2 = a[0], a[1], a[2], a[3]
+# i = 0
+# r = 'YES'
+# while x1 != x2:
+#   x1 += v1
+#   x2 += v2
+#   i += 1
+#   if i > x2:
+#     r = 'NO'
+#     break
+# print(r, i, x2, x1)
+
+
+def _0114(n: list) -> str:
+    x1, v1, x2, v2 = n[0], n[1], n[2], n[3]
+    x = (v1 - v2 )/ (x2 - x1)
+    if x >= 0:
+      return 'YES'
+    return 'NO'
+print(_0114(list(map(int, input().split()))))
